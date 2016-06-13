@@ -37,15 +37,35 @@
                                     <action selector="makeRedHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYY-Av-CzH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqJ-XG-95x">
+                                <rect key="frame" x="231" y="417" width="86" height="30"/>
+                                <state key="normal" title="Unhide Gold"/>
+                                <connections>
+                                    <action selector="makeGoldUnhidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2Z-gR-Fs9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-zZ-YXU">
+                                <rect key="frame" x="52" y="417" width="80" height="30"/>
+                                <state key="normal" title="Unhide Red"/>
+                                <connections>
+                                    <action selector="makeRedUnhidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eN-gr-mkc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Uoq-DL-ehd"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="goldImg" destination="WwF-aD-CUN" id="auG-GY-KdM"/>
                         <outlet property="hideGold" destination="eh6-lY-D4I" id="yjC-JG-OML"/>
                         <outlet property="hideRed" destination="GVK-k5-AR3" id="4OW-iU-TAu"/>
                         <outlet property="redImg" destination="HPJ-cX-qO8" id="MEY-th-ZGO"/>
+                        <outlet property="unhideGold" destination="LqJ-XG-95x" id="X8B-fD-peK"/>
+                        <outlet property="unhideRed" destination="4f7-zZ-YXU" id="fco-cM-7EM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
