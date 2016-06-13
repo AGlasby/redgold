@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var hideRed: UIButton!
     @IBOutlet weak var hideGold: UIButton!
+    @IBOutlet weak var unhideRed: UIButton!
+    @IBOutlet weak var unhideGold: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +32,16 @@ class ViewController: UIViewController {
         redImg.hidden = true
     }
 
+    @IBAction func makeRedUnhidden(sender: AnyObject) {
+        redImg.hidden = false
+    }
+    
     @IBAction func makeGoldHide(sender: AnyObject) {
         goldImg.hidden = true
+    }
+    
+    @IBAction func makeGoldUnhidden(sender: AnyObject) {
+        goldImg.hidden = false
     }
 }
 
